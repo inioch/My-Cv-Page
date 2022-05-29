@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+@media screen and (min-hei) {
+    
+}
+.down-place{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+.down a{
+    text-decoration: none;
+    color: rgb(121, 115, 115);
+    border-radius: 50%;
+    
+}
+.down a:hover{
+    color: white;
+    transition: 1s ease;
+}
+.box a, .save-cv{
+    text-decoration: none;
+    color: white;
+}
+.box a:hover{
+    color: rgba(255, 255, 255, 0.568);
+}
+.save-cv{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.568);
+}
+.save-cv:hover{
+    background-color: white;
+    color: gray;
+    transition: 2s ease;
+}
+.word{
+    color: rgba(255, 255, 255, 0.842);
+}
+.top{
+    position: relative;
+}
+.to-top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
