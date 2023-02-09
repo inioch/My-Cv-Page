@@ -1,50 +1,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
+
+* {
     font-family: 'Poppins', sans-serif;
     user-select: none;
 }
-@media screen and (min-hei) {
-    
-}
-.down-place{
+
+@media screen and (min-hei) {}
+
+.down-place {
     position: absolute;
     bottom: 5%;
     left: 50%;
 }
-.down a{
+
+.down a {
     text-decoration: none;
     color: rgb(121, 115, 115);
     border-radius: 50%;
-    
+
 }
-.down a:hover{
+
+.down a:hover {
     color: white;
     transition: 1s ease;
 }
-.box a, .save-cv{
+
+.box a,
+.save-cv {
     text-decoration: none;
     color: white;
 }
-.box a:hover{
+
+.box a:hover {
     color: rgba(255, 255, 255, 0.568);
 }
-.save-cv{
+
+.save-cv {
     color: white;
     background-color: rgba(255, 255, 255, 0.568);
 }
-.save-cv:hover{
+
+.save-cv:hover {
     background-color: white;
     color: gray;
     transition: 2s ease;
 }
-.word{
+
+.word {
     color: rgba(255, 255, 255, 0.842);
 }
-.top{
+
+.top {
     position: relative;
 }
-.to-top{
+
+.to-top {
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+
+
+/* animation */
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 32px;
+    padding-top: 40vh;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+
+.anim {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.anim:first-of-type {
+    animation: showup 7s infinite;
+}
+
+.anim:last-of-type {
+    width: 0px;
+    animation: reveal 7s infinite;
+}
+
+.anim:last-of-type span {
+    margin-left: -255px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -255px;
+    }
+
+    20% {
+        margin-left: -255px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 255px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 255px;
+    }
 }

@@ -10,18 +10,23 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>CV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+    </style>
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg bg-secondary ">
+    <nav class="navbar fixed-top navbar-expand-lg bg-white ">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand  text-white">Curriculum Vitae</a>
+            <a href="#" class="navbar-brand fs-2 "
+                style="font-family: 'Rubik 80s Fade', cursive; color: rgb(51, 49, 49); ">Curriculum
+                Vitae</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ">
+            <div class="collapse navbar-collapse float-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav  ">
                     <li class="nav-item"><a href="#Aboutme" class="nav-link">ABOUT ME</a></li>
                     <li class="nav-item"><a href="#Projects" class="nav-link">PROJECTS</a></li>
                     <li class="nav-item"><a href="#Contact" class="nav-link">CONTACT</a></li>
@@ -33,8 +38,11 @@
         <!-- Head -->
         <section>
             <div style="height: 100vh" class="d-flex text-center flex-column justify-content-center">
-                <h1 class="fw-bold mb-5">Hi I am Paweł!</h1>
-                <h4>I want to be the best Front-End-Developer.</h4>
+                <div>
+                    <h1 class="fw-bold mb-5 anim" style="font-size: 2.5rem;">Hi!</h1>
+                    <h1 class="fw-bold mb-5 anim" style="font-size: 2.5rem;"><span>I am Paweł. </span> </h1>
+                </div>
+                <h4>This is my CV</h4>
                 <div class="down down-place">
                     <a href="#Aboutme">
                         <i class="bi bi-arrow-down-circle fs-1"></i>
@@ -110,20 +118,20 @@
             <h2 class="text-center pb-5">Few of my last project</h2>
             <div class="row d-flex justify-content-evenly w-100">
                 <div class="card col-12 col-md-4 bg-secondary mb-5" style="height: 23rem; width: 15rem;">
-                    <img class="img-fluid rounded pt-2" style="height: 10rem;" src="./files/kosci.png" alt="">
+                    <img class="img-fluid rounded pt-2" style="height: 10rem;" src="./files/Menu.png" alt="">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Dices</h5>
-                        <p class="card-text">Multiplayer game, roll the dice</p>
-                        <a href="https://inioch.github.io/Kosci/"
+                        <h5 class="card-title">Menu</h5>
+                        <p class="card-text">Daily home lunch Menu</p>
+                        <a href="https://inioch.github.io/menu/"
                             class="btn btn-secondary bg-white text-secondary">Check</a>
                     </div>
                 </div>
                 <div class="card col-12 col-md-4 bg-secondary mb-5" style="height: 23rem; width: 15rem;">
-                    <img class="img-fluid rounded pt-2" style="height: 10rem;" src="./files/rock.png" alt="">
+                    <img class="img-fluid rounded pt-2" style="height: 10rem;" src="./files/car.png" alt="">
                     <div class="card-body  text-center">
-                        <h5 class="card-title">Rock, Paper, Scissors</h5>
-                        <p class="card-text">Choose one, and see what opponent will choose</p>
-                        <a href="https://inioch.github.io/Rock-Paper/"
+                        <h5 class="card-title">Car site</h5>
+                        <p class="card-text">Car market site</p>
+                        <a href="https://inioch.github.io/CarMarket/"
                             class="btn btn-secondary bg-white text-secondary">Check</a>
                     </div>
                 </div>
@@ -141,7 +149,7 @@
                     <div class="card-body  text-center">
                         <h5 class="card-title">Złoty Smok</h5>
                         <p class="card-text">Responsive webstie for restaurant</p>
-                        <a href="https://inioch.github.io/zlotysmok/"
+                        <a href="https://inioch.github.io/Restaurant-Page/"
                             class="btn btn-secondary bg-white text-secondary">Check</a>
                     </div>
                 </div>
